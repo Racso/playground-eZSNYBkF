@@ -2,7 +2,7 @@ title: Fundamentos de teoría de grafos
 plan:
 - title: Fundamentos
   statement: markdowns/basics.md
-- title: Representations
+- title: Representaciones
   statement: markdowns/representations.md
 projects:
   python:
