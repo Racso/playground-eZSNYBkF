@@ -1,5 +1,5 @@
 def get_graph_info(adj_list):
-    #adj_list is the adjacency list of a graph. It's a list of lists, with each element being the two nodes connected by an edge.
-    #For example, if adj_list=[[0,1],[2,3],[4,3]], we have three edges, one connecting nodes 0 and 1, another one connecting nodes 2 and 3 and a third one connecting nodes 4 and 3.
+    #adj_list es la lista de adyacencia de un grafo. Es una lista de listas, donde cada elemento es un par de nodos conectados por una arista.
+    #Por ejemplo, si adj_list=[[0,1],[2,3],[4,3]], tenemos tres aristas: una contectando los nodos 0 y 1, otra conectando los nodos 2 y 3, y una conectando los nodos 4 y 3.
 
-    return 2, 0, False #fix me: for the given graph, return: maximum grade of a node, number of loops, boolean representing if there are parallel edges.
+    return 2, 0, False #arreglar: para el grafo dado, retornar: el máximo grafo de los nodos, el número de ciclos, un booleano representando si hay aristas paralelas o no.
