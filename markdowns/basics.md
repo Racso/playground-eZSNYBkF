@@ -21,35 +21,35 @@ Los grafos se componen de dos tipos de elemento:
 1. **Vértices o nodos**, que representan elementos. En la imagen, los círculos son los nodos, y cada nodo representa una ciudad.
 2. **Aristas**, que representan relaciones entre elementos. En la imagen, las líneas son las aristas, cada una representando una conexión aérea entre dos ciudades.
 
-Each edge connects exactly two nodes. This means that you'll never find and edge with one side pointing to nowhere.
+Cada arista conecta exactamente dos nodos. Esto significa que nunca encontrarás una arista con un lado apuntando hacia la nada.
 
-We say that two nodes are neighbors if there is an edge connecting them. In the example, Bucaramanga (BUC) and Bogotá (BOG) are neighbors, but Pasto (PAS) and Leticia (LET) are not neighbors.
+Se dice que dos nodos son vecinos si hay una arista conectándolos. En el ejemplo, Bucaramanga (BUC) y Bogotá (BOG) son vecinos, pero Pasto (PAS) y Leticia (LET) no lo son.
 
-?[How many neighbors does node BUC have?]
+?[¿Cuántos vecinos tiene el nodo BUC?]
 -[ ] 3
 -[ ] 6
 -[x] 4
 -[ ] 5
 
-A graph can be drawn in different ways without changing it at all. How and where you draw the nodes and edges of a graph doesn't matter; what matters is what nodes does the graph contain and how are they connected. For example, our cities graph can be redrawn in the following way, without changing it:
+Un grafo puede dibujarse de diferentes formas sin cambiarlo. Dónde y cómo se dibujen los nodos y las aristas de un grafo no importa; lo que importa es qué nodos contiene el grafo y cómo están conectados entre ellos. Por ejemplo, podemos redibujar nuestro grafo de ciudades de la siguiente forma, sin cambiarlo:
 
-![Graph example, drawn in another way](cities-2.png "")
+![Ejemplo de grafo, dibujado de otro modo](cities-2.png "")
 
-Based on a graph, you can easily calculate things about the situation you're modelling. For small graphs, you can make it by hand. For bigger graphs, you can code simple programs or use well-known algorithms to tackle the problem. Try solving the following questions about our cities graph:
+Con base en un grafo, puedes calcular fácilmente cosas acerca de la situación que estás modelando. Para grafos pequeños, puedes hacerlo a mano. Para grafos mayores, puedes crear programas simples o utilizar algoritmos conocidos para abordar el problema. Intenta resolver las siguientes preguntas acerca de nuestro grafo de ciudades:
 
-?[How many cities are there?]
+?[¿Cuántas ciudades hay?]
 -[x] 10
 -[ ] 9
 -[ ] 8
 -[ ] 11
 
-?[If I want to fly from Cartagena (CAR) to Pasto (PAS), What's the MINIMUM amount of flights that I need to take?]
+?[Si quisiera ir desde Cartagena (CAR) hasta Pasto (PAS), ¿cuál es la cantidad MÍNIMA de vuelos que tendría que tomar?]
 -[x] 3
 -[ ] 2
 -[ ] 4
 -[ ] 5
 
-# Loops and parallel edges
+# Ciclos y aristas paralelas
 
 Our cities graph is a **simple graph**, as it doesn't have **"loops"** or **"parallel edges"**. Let's see what those are. The following graph is **non-simple**:
 
