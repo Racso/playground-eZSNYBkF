@@ -51,27 +51,29 @@ Con base en un grafo, puedes calcular fácilmente cosas acerca de la situación 
 
 # Ciclos y aristas paralelas
 
-Our cities graph is a **simple graph**, as it doesn't have **"loops"** or **"parallel edges"**. Let's see what those are. The following graph is **non-simple**:
+Nuestro grafo de ciudades es un **grafo simple**, dado que no tiene **"ciclos"** ni **"aristas paralelas"**. Vamos a ver qué son esos.
 
-![Non simple graph](nosimple.png "")
+El siguiente grafo **no** es un grafo simple:
 
-In this graph, there's an edge connecting node 2 with itself. That edge is a loop. In other words, a **loop** is an edge that starts and finishes in the same node. That node is connected to itself, and therefore is its own neighbor.
+![Grafo que no es simple](nosimple.png "")
 
-You can also see that nodes 1 and 3 are connected by two edges. Those edges are "parallel edges", or "multiple edges". In other words, several edges are **parallel edges** if they connect the same pair of nodes.
+En este grafo, hay una arista que conecta al nodo 2 consigo mismo. Esa arista es un ciclo. En otras palabras, un **ciclo o bucle** es una arista que empieza y termina en el mismo nodo. El nodo está conectado consigo mismo, de modo que es su propio vecino.
 
-Loops and parallel edges are useful for certain, specific applications. However, for lots of real life applications (probably most of them), you don't want to have loops or parallel edges in your graphs. Graphs without loops or parallel edges are called **simple graphs**.
+También puedes ver que los nodos 1 y 3 están conectados por dos aristas. Esas aristas son "paralelas". En otras palabras, varias aristas son **aristas paralelas** si conectan el mismo par de nodos.
 
-# The degree of a node
-The **degree** of a node is the amount of edges incident on it. "Edges incident on a node" are edges that connect that node with another one (or itself, in the case of a loop), or edges that "touch" that node.
+Los ciclos y las aristas paralelas son útiles en ciertas aplicaciones específicas. Sin embargo, para muchas aplicaciones del mundo real (quizá la mayoría de ellas), no querrás tener ciclos ni aristas paralelas en tus grafos. A un grafo que no tiene ciclos ni aristas paralelas se le llama **grafo simple**.
 
-In a simple graph, the degree of a node is equal to the amount of neighbors it has. On the other hand, when a node has a loop, the loop adds 2 to the degree of the node.
+# El grado de un nodo
+El **grado** de un nodo es la cantidad de aristas que inciden en él. Una arista "incide" en un nodo si lo conecta con otro nodo (o consigo mismo, en el caso de un bucle). Dicho de otro modo: una arista incide en un nodo si lo "toca" con uno de sus dos lados.
 
-In our non-simple graph example above, the degrees of the nodes are the following:
+En un grafo simple, el grado de un nodo es igual a la cantidad de vecinos que éste tiene. En contraste, cuando un nodo tiene un ciclo, el ciclo añade 2 al grado del nodo.
+
+En nuestro grafo no simple del ejemplo anterior, los grados de los nodos son los siguientes:
 * deg(**1**) = 3
-* deg(**2**) = 3 (remember: the loop adds 2)
+* deg(**2**) = 3 (recuerda: el ciclo añade 2)
 * deg(**3**) = 2
 
-# Directed graphs
+# Grafos dirigidos
 
 Let's suppose we want to model some Twitter users with a graph. This is the information about the users:
 
