@@ -46,11 +46,11 @@ Los grafos también pueden representarse con **matrices de adyacencia**. Aquí e
 |**BUE**|0	|0	|0	|0	|0	|1	|0	|1	|0	|1      |
 |**PAS**|0	|0	|0	|0	|0	|1	|0	|0	|1	|0      |
 
-Adjacency matrices have the graph nodes in both their rows and columns. The value on each cell shows if there exists an edge between the pair of nodes of the corresponding row and column. For example, the cell in row **BOG** and column **BUC** has a value of **1** because there is an edge between BOG and BUC, whereas the cell in row **PAS** and column **YOP** has a **0** because there's no edge between those two nodes.
+Una matriz de adyacencia tiene los nodos del grafo listados en sus filas y columnas. El valor en cada celda indica si existe una arista entre el par de nodos correspondiente a la fila y la columna. Por ejemplo, la celda en la fila **BOG** y la columna **BUC** tiene un valor de **1** porque existe una arista entre BOG y BUC, mientras que la celda en la fila **PAS** y la columna **YOP** tiene un **0** porque no hay arista entre esos dos nodos.
 
-A graph may have several adjacency matrices. In the example above, if you put the nodes in a different order, you'll have a new adjacency matrix of the same graph.
+Un grafo puede tener varias matrices de adyacencia. En el ejemplo anterior, si pones los nodos en un orden diferente, tendrás una nueva matriz de adyacencia del mismo grafo.
 
-As you may check, if a graph is undirected, its adjacency matrices are symmetrical. On the other side, if the graph is directed, the matrices are not symmetrical, as a 1 only appears in a cell if there's an edge from the node of the row to the node of the column. For example, the following is the adjacency matrix of our Twitter graph:
+Como puedes ver, si un grafo es no dirigido, las matrices de adyacencia son simétricas. Por otro lado, si el grafo es dirigido, las matrices no son simétricas, pues un 1 sólo aparece en una celda si hay una arista desde el nodo de la fila hasta el nodo de la columna. Por ejemplo, la siguiente es la matriz de adyacencia de nuestro grafo de Twitter.
 
 |   | A | B | C |
 |---|---|---|---|
@@ -58,12 +58,12 @@ As you may check, if a graph is undirected, its adjacency matrices are symmetric
 |**B**|1|0|0|
 |**C**|0|1|0|
 
-# Exercise
-The shown Python function is used for obtaining some information about a given graph. The graph is passed to the function as an adjacency list, and the function returns the maximum degree of a node of the graph, the amount of loops in the graph and a boolean indicating whether the graph has parallel edges or not.
+# Ejercicio
+La función de Python mostrada se utiliza para obtener información sobre un grafo dado. El grafo se pasa a la función como una lista de adyacencia, y la función retorna el grado máximo de un nodo en el grafo, el número de ciclos en el grafo y un valor de tipo *boolean* indicando si el grafo tiene aristas paralelas o no.
 
-Fix the function so it returns the desired information. You may assume that the graph will at most have 5 nodes, numbered from 1 to 5.
+Arregla la función para que devuelva la información deseada. Puese asumir que el grafo tendrá como máximo 5 nodos, numerados del 1 al 5.
 
-@[The shown function should return some information about a given graph. Fix it so it does it correctly.]({"stubs": ["graphs.py"], "command": "python3 test_graphs.py"})
+@[La función debe devolver alguna información sobre un grafo dado. Corrígela para que lo haga correctamente.]({"stubs": ["graphs.py"], "command": "python3 test_graphs.py"})
 
-# Ending
-Congratulations! Now you have some fundamentals about graph theory. Now, you may learn more concepts abouth graphs, or start to learn some useful algorithms to apply them. The choice is yours!
+# Finalización
+¡Felicidades! Ahora conoces algunos conceptos fundamentales de teoría de grafos. Ahora, puedes aprender más conceptos sobre los grafos, o empezar a aprender algoritmos útiles para aplicar. ¡La decisión es tuya!
