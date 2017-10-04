@@ -89,6 +89,6 @@ Es debido a esta asimetría que nuestro grafo necesita de algún modo de indicar
 
 ![Grafo dirigido de ejemplo](twitter.png "")
 
-Las aristas dirigidas se ven como flechas. Tienen un nodo inicial y un nodo final.
+Las aristas dirigidas se ven como flechas. Tienen un nodo inicial y un nodo final.  Un grafo con aristas dirigidas se llama **grafo dirigido**.
 
 Nuestro grafo dirigido nos muestra fácilmente alguna información sobre nuestros usuarios. Por ejemplo, es claro que Alice y Bob se siguen mutuamente, y que Bob es la persona con más seguidores (porque dos flechas apuntan a B).
