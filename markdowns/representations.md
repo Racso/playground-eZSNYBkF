@@ -1,13 +1,12 @@
+Ya sabemos qué son los grafos. Ahora, veamos cómo podemos representar grafos de otros modos además de dibujarlos. Ello será útil si queremos trabajar con grafos con un computador.
 
-We already know what graphs are. Now, let's see how can we represent graphs in ways other than drawing. This will be useful if we want to work with graphs with a computer.
+# Lista de adyacencia
 
-# Adjacency List
+¿Recuerdas nuestro grafo de ciudades?
 
-Remember our cities graph?
+![Grafo de ejemplo](cities.png "")
 
-![Graph example](cities.png "")
-
-Let's make a list of each node's neighbors:
+Hagamos una lista de los vecinos de cada nodo:
 
 * **CAR:** MED, BUC
 * **MED:** CAR, BUC, BUE, ARM, BOG
@@ -20,19 +19,19 @@ Let's make a list of each node's neighbors:
 * **PAS:** BUE, CAL
 * **LET:** CAL, YOP
 
-That's the **adjacency list** of the graph: a list of lists describing the neighbors of each node.
+Esa es la **lista de adyacencia** del grafo: una lista de listas describiendo los vecinos de cada nodo.
 
-If the graph is directed, a node B only appears in the list of a node A if there's an edge from A to B. For example, in our directed Twitter graph:
+Si el grafo es dirigido, un nodo B sólo aparece en la lista de un nodo A si hay una arista desde A hacia B. Por ejemplo, en nuestro grafo dirigido de Twitter:
 
-![Directed graph example](twitter.png "")
+![Grafo dirigido de ejemplo](twitter.png "")
 
 * **A:** B, C
 * **B:** A
 * **C:** B
 
-# Adjacency Matrix
+# Matriz de adyacencia
 
-Graphs can also be represented with **adjacency matrices**. Here's the adjacency matrix of our cities graph:
+Los grafos también pueden representarse con **matrices de adyacencia**. Aquí está la matriz de adyacencia de nuestro grafo de ciudades:
 
 |	|CAR	|BUC	|YOP	|BOG	|LET	|CAL	|ARM	|MED	|BUE	|PAS    |
 |---	|---	|---	|---	|---	|---	|---	|---	|---	|---	|---    |
