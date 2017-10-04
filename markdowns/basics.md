@@ -1,25 +1,25 @@
 # ¡Te doy la bienvenida!
 
-This short playground will give you some fundamentals about graph theory: What graphs, nodes and edges are, and how can they be used to model information and solve problems.
+Este *playground* corto te dará algunas bases de teoría de grafos: qué son los grafos, nodos y aristas, y cómo pueden usarse para modelar información y resolver problemas.
 
-Want to help with more content or fixing a mistake? [Find this Playground in Github!](https://github.com/Racso/playground-NpnXDluI)
+¿Te gustaría añadir añadiendo contenido o corrigiendo errores? [¡Encuentra este *playground* en Github!](https://github.com/Racso/playground-eZSNYBkF)
 
-# Prerequisites
-* None.
+# Prerrequisitos
+* Ninguno.
 
-# Graphs, nodes and edges
+# Grafos, nodos y aristas
 
-Look at the following image:
+Mira la siguiente imagen:
 
-![Graph example](cities.png "")
+![Ejemplo de grafo](cities.png "")
 
-The image represents some Colombian cities: Cartagena, Bucaramanga, Medellín, Bogotá, and other. Each circle is a city. The lines connecting the circles represent commercial flights that you can take between cities. For example, you can fly from Bucaramanga (BUC) to Bogotá (BOG), as those cities are connected with a line, but you can't fly from Pasto (PAS) to Leticia (LET) because they aren't connected.
+La imagen representa algunas ciudades colombianas: Cartagena, Bucaramanga, Medellín, Bogotá y otras. Cada círculo es una ciudad. Las líneas conectando los círculos representan vuelos comerciales que puedes tomar entre ciudades. Por ejemplo, puedes volar de Bucaramanga (BUC) a Bogotá (BOG), pues esas ciudades están conectadas con una línea, pero no puedes volar de Pasto (PAS) a Leticia (LET) porque no están conectadas.
 
-Easy, right? Well, that's a graph, and they are indeed easy to understand. **Graphs** are structures that allow us to model relationships between elements. In this case, we used a graph to model flight connections between cities.
+Sencillo, ¿no? Pues buen, ese es un grafo, y los grafos son fáciles de entender. Los **grafos** son estructuras que nos permiten modelar relaciones entre elementos. En este caso, usamos un grafo para modelar conexiones aéreas entre ciudades.
 
-Graphs are composed of two kind of elements:
-1. **Vertices or nodes**, which represent elements. In the image, the circles are the nodes, each node representing a city.
-2. **Edges**, which represent relations between elements. In the image, the lines are the edges, each edge representing a flight connection between cities.
+Los grafos se componen de dos tipos de elemento:
+1. **Vértices o nodos**, que representan elementos. En la imagen, los círculos son los nodos, y cada nodo representa una ciudad.
+2. **Aristas**, que representan relaciones entre elementos. En la imagen, las líneas son las aristas, cada una representando una conexión aérea entre dos ciudades.
 
 Each edge connects exactly two nodes. This means that you'll never find and edge with one side pointing to nowhere.
 
