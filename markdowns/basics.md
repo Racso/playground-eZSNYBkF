@@ -75,20 +75,20 @@ En nuestro grafo no simple del ejemplo anterior, los grados de los nodos son los
 
 # Grafos dirigidos
 
-Let's suppose we want to model some Twitter users with a graph. This is the information about the users:
+Supongamos que queremos modelar algunos usuarios de Twitter con un grafo. Esta es la información de los usuarios:
 
-- Alice (A) follows Bob and Carol.
-- Bob (B) follows Alice.
-- Carol (C) follows Bob.
+- Alice (A) sigue a Bob y a Carol.
+- Bob (B) sigue a Alice.
+- Carol (C) sigue a Bob.
 
-OK, cool. We can model people as nodes and "follows" as edges. However, this time we have an extra ingredient: direction.
+Bien. Podemos modelar personas como nodos y "seguimientos" como aristas. Sin embargo, esta vez tenemos un ingrediente adicional: dirección.
 
-In Twitter, following a person goes in one direction: you may follow one person, but that person may or may not follow you back. In our example, Carol follows Bob, but Bob doesn't follow Carol back. Something similar happens with personal relationships in real life: you may like a person, but that person may or may not like you back.
+En Twitter, seguir a una persona va en una sola dirección: puedes seguir a una persona, pero esa persona puede o no seguirte de vuelta. En nuestro ejemplo, Carol sigue a Bob, pero Bob no sigue a Carol. Algo similar pasa con las relaciones personales en la realidad: puedes sentir agrado hacia una persona, pero esa persona puede o no sentir agrado hacia ti.
 
-Is because of this asymmetry that our graph needs a way to convey who follows whom. This is done with **directed edges**:
+Es debido a esta asimetría que nuestro grafo necesita de algún modo de indicar quién sigue a quién. Esto se hace con **aristas dirigidas**:
 
-![Directed graph example](twitter.png "")
+![Grafo dirigido de ejemplo](twitter.png "")
 
-Directed edges look like arrows. They have a starting node and an ending node.
+Las aristas dirigidas se ven como flechas. Tienen un nodo inicial y un nodo final.
 
-Our directed graph easily shows us some information about our users. For example, it's clear that Alice and Bob follow each other, and that Bob is the person with the most followers (because two arrows point to B).
+Nuestro grafo dirigido nos muestra fácilmente alguna información sobre nuestros usuarios. Por ejemplo, es claro que Alice y Bob se siguen mutuamente, y que Bob es la persona con más seguidores (porque dos flechas apuntan a B).
