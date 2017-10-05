@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from graphs import get_graph_info
 
 def send_msg(channel, msg):
@@ -29,12 +31,12 @@ def test_get_graph_info():
 
         success()
 
-        send_msg("�Buen trabajo!", "�Correcto!")
+        send_msg("¡Buen trabajo!", "¡Correcto!")
     except AssertionError as e:
         fail()
-        send_msg("Oops! 🐞", e)
-        send_msg("Pista 💡", "Un ciclo es una arista que conecta un nodo consigo mismo, y a�ade 2 al grado del nodo.")
-        send_msg("Pista 💡", "El grafo es no dirigido, de modo que una arista de A hacia B y una arista de B hacia A son paralelas.")
+        send_msg("Oops! ðŸž", e)
+        send_msg("Pista ðŸ’¡", "Un ciclo es una arista que conecta un nodo consigo mismo, y añade 2 al grado del nodo.")
+        send_msg("Pista ðŸ’¡", "El grafo es no dirigido, de modo que una arista de A hacia B y una arista de B hacia A son paralelas.")
 
 if __name__ == "__main__":
     test_get_graph_info()
